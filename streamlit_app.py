@@ -47,7 +47,7 @@ try:
         streamlit.error("Please select a fruit to get information.")
     else:
         streamlit.dataframe(get_fruityvice_data(fruit_choice))
-except URLerror as e:
+except URLError as e:
     streamlit.error()
 
 streamlit.header("View Our Fruit List - Add Your Favorites!")
